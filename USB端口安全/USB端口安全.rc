@@ -1,0 +1,480 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+// Generated Help ID header file
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "resource.hm"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(中华人民共和国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#include ""res\\USB.rc2""  // 非 Microsoft Visual C++ 编辑的资源\r\n"
+    "#include ""afxres.rc""     // 标准组件\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\USB端口安全.ico"
+IDI_ICON1               ICON                    "res\\USB端口安全6.ico"
+IDI_ICON2               ICON                    "res\\hel.ico"
+IDI_ICON3               ICON                    "res\\access.ico"
+IDI_ICON4               ICON                    "res\\garbage.ico"
+IDI_ICON5               ICON                    "res\\copy.ico"
+IDI_ICON6               ICON                    "res\\disk.ico"
+IDI_ICON7               ICON                    "res\\task.ico"
+IDI_ICON8               ICON                    "res\\cmd.ico"
+IDI_ICON9               ICON                    "res\\reg.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 182, 55
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 USB端口安全"
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,7,21,21
+    LTEXT           "USB端口安全 1.0 版",IDC_STATIC,66,10,75,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2012",IDC_STATIC,50,20,82,8
+    DEFPUSHBUTTON   "确定",IDOK,125,32,50,16,WS_GROUP
+    LTEXT           "Designed by FFF",IDC_STATIC,38,31,61,8
+END
+
+IDD_USB_DIALOG DIALOGEX 0, 0, 558, 359
+STYLE DS_SETFONT | DS_MODALFRAME | DS_3DLOOK | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "USB端口安全"
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    LTEXT           ">>帮助<<",IDC_STATIC_HELP,460,51,33,8,SS_NOTIFY
+    ICON            IDI_ICON2,IDC_STATIC,465,25,20,20,0,WS_EX_TRANSPARENT,HIDC_STATIC
+END
+
+IDD_DIALOG1 DIALOGEX 0, 0, 559, 254
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CONTROL | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         146,IDC_STATIC,"Static",SS_BITMAP,0,0,571,256
+END
+
+IDD_DIALOG2 DIALOGEX 0, 0, 560, 257
+STYLE DS_SETFONT | DS_3DLOOK | DS_FIXEDSYS | DS_CONTROL | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_LIST1,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,25,26,505,178
+    GROUPBOX        "磁盘信息",IDC_STATIC,7,7,546,243
+    PUSHBUTTON      "隐藏非移动设备",IDC_BUTTON1,26,217,73,19
+    PUSHBUTTON      "显示所有",IDC_BUTTON2,115,217,73,19
+END
+
+IDD_DIALOG3 DIALOGEX 0, 0, 560, 253
+STYLE DS_SETFONT | DS_3DLOOK | DS_FIXEDSYS | DS_CONTROL | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "使用记录",IDC_STATIC,7,7,546,239
+    CONTROL         "",IDC_LIST2,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,7,20,546,226
+END
+
+IDD_DIALOG4 DIALOGEX 0, 0, 560, 257
+STYLE DS_SETFONT | DS_3DLOOK | DS_FIXEDSYS | DS_CONTROL | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "您可以在此设置USB存储设备的访问权限...",IDC_STATIC_FONT,71,35,258,15
+    PUSHBUTTON      "开始执行",IDC_BUTTON1,343,22,92,26
+    CONTROL         "关闭USB存储设备的盘符自动分配",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,128,87,133,10
+    CONTROL         "禁止USB自动运行",IDC_CHECK2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,128,133,77,10
+    CONTROL         "禁止将电脑里的资料拷贝到USB存储设备",IDC_CHECK3,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,128,179,157,10
+    ICON            IDI_ICON6,IDC_STATIC,97,81,20,20
+    ICON            IDI_ICON4,IDC_STATIC,97,127,20,20
+    ICON            IDI_ICON5,IDC_STATIC,97,173,20,20
+    ICON            IDI_ICON3,IDC_STATIC,45,26,20,20
+    GROUPBOX        "",IDC_STATIC,47,63,330,155
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME | SS_SUNKEN,140,113,192,1
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME | SS_SUNKEN,140,164,193,1
+    GROUPBOX        "",IDC_STATIC,398,109,135,88
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME | SS_SUNKEN,387,86,1,114
+    LTEXT           "PS:由于本操作涉及到注册表操作，注册表被         后可能无法执行成功，解决方法为                        ，具体方法可以参考帮助文档，谢谢使用！",IDC_STATIC,415,129,100,54,SS_SUNKEN,WS_EX_STATICEDGE
+    LTEXT           "开启注册表",IDC_STATIC_PS,416,153,41,8,SS_NOTIFY
+    LTEXT           "禁止",IDC_STATIC_NO,474,138,16,8,SS_NOTIFY
+END
+
+IDD_DIALOG5 DIALOGEX 0, 0, 561, 257
+STYLE DS_SETFONT | DS_3DLOOK | DS_FIXEDSYS | DS_CONTROL | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "小工具系列",IDC_STATIC,7,4,547,243
+    CONTROL         168,IDC_STATIC_TASK,"Static",SS_BITMAP | SS_NOTIFY,298,23,64,59
+    CONTROL         166,IDC_STATIC_REG,"Static",SS_BITMAP | SS_NOTIFY,54,23,64,59
+    CONTROL         167,IDC_STATIC_CMD,"Static",SS_BITMAP | SS_NOTIFY,174,23,64,59
+    LTEXT           "修复注册表",IDC_STATIC,55,87,41,8
+    LTEXT           "修复cmd",IDC_STATIC,179,86,30,8
+    LTEXT           "修复任务管理器",IDC_STATIC,292,87,57,8
+    LTEXT           "(禁用)",IDC_STATIC_NO1,97,87,22,8,SS_NOTIFY
+    LTEXT           "(禁用)",IDC_STATIC_NO2,212,86,22,8,SS_NOTIFY
+    LTEXT           "(禁用)",IDC_STATIC_NO3,352,86,22,8,SS_NOTIFY
+END
+
+IDD_DIALOG6 DIALOGEX 0, 0, 311, 254
+STYLE DS_SETFONT | DS_MODALFRAME | DS_3DLOOK | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "综合设置"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "",IDC_STATIC,7,7,297,240
+    CONTROL         "开机启动",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,64,36,48,10
+    PUSHBUTTON      "保存设置",IDC_BUTTON1,166,223,50,14
+    PUSHBUTTON      "重新设置登录密码↓↓",IDC_BUTTON2,64,55,96,22
+    GROUPBOX        "",IDC_STATIC_SHOW,64,86,175,121,BS_NOTIFY | WS_GROUP,WS_EX_DLGMODALFRAME
+    EDITTEXT        IDC_EDIT1,130,108,87,14,ES_AUTOHSCROLL | WS_GROUP
+    LTEXT           "原始密码：",IDC_STATIC_1,84,111,41,8,SS_NOTIFY
+    EDITTEXT        IDC_EDIT2,130,133,87,14,ES_AUTOHSCROLL | WS_GROUP
+    LTEXT           "新密码：",IDC_STATIC_2,92,134,33,8,SS_NOTIFY
+    PUSHBUTTON      "确认",IDC_BUTTON3,164,176,50,14,WS_GROUP
+END
+
+IDD_DIALOG7 DIALOGEX 0, 0, 559, 257
+STYLE DS_SETFONT | DS_3DLOOK | DS_FIXEDSYS | DS_CONTROL | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "",IDC_STATIC,7,7,545,243
+    GROUPBOX        "Autorun检测",IDC_STATIC,19,18,255,127
+    LISTBOX         IDC_LIST1,36,79,219,50,LBS_SORT | LBS_HASSTRINGS | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_HSCROLL | WS_TABSTOP
+    PUSHBUTTON      "开始动态检测",IDC_BUTTON1,37,42,85,14
+    PUSHBUTTON      "清空",IDC_BUTTON2,183,42,70,14
+    LTEXT           "实时检测报告:",IDC_STATIC,38,64,52,8
+    GROUPBOX        "位于usb设备的程序进程",IDC_STATIC,287,18,255,225
+    CONTROL         "",IDC_LIST2,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,289,33,252,168
+    GROUPBOX        "其他查杀",IDC_STATIC,20,154,255,86
+    PUSHBUTTON      "全部刷新",IDC_BUTTON4,302,215,80,14
+    PUSHBUTTON      "查杀设置",IDC_BUTTON3,38,183,83,35
+    PUSHBUTTON      "执行查杀",IDC_BUTTON5,159,183,83,35
+END
+
+IDD_DIALOG8 DIALOGEX 0, 0, 200, 99
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "登录",IDOK,81,78,50,14
+    PUSHBUTTON      "取消",IDCANCEL,143,78,50,14
+    EDITTEXT        IDC_EDIT1,43,33,98,14,ES_AUTOHSCROLL
+    LTEXT           "请输入密码",IDC_STATIC,24,19,41,8
+    LTEXT           "初始密码为(fanshuquan)",IDC_STATIC,56,49,83,8,WS_DISABLED
+END
+
+IDD_DIALOG9 DIALOGEX 0, 0, 186, 93
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "本机杀毒软件设置"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,25,58,50,14
+    PUSHBUTTON      "取消",IDCANCEL,111,58,50,14
+    EDITTEXT        IDC_EDIT1,26,27,106,14,ES_AUTOHSCROLL
+    GROUPBOX        "请选择正确的软件路径",IDC_STATIC,7,7,172,79
+    PUSHBUTTON      "...",IDC_BUTTON1,134,27,27,16
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080403a8"
+        BEGIN
+            VALUE "CompanyName", "TODO: <公司名>"
+            VALUE "FileDescription", "TODO: <文件说明>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "USB端口安全.exe"
+            VALUE "LegalCopyright", "TODO: (C) <公司名>。保留所有权利。"
+            VALUE "OriginalFilename", "USB端口安全.exe"
+            VALUE "ProductName", "TODO: <产品名>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 936
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 175
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_USB_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 552
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 352
+    END
+
+    IDD_DIALOG1, DIALOG
+    BEGIN
+        RIGHTMARGIN, 552
+        BOTTOMMARGIN, 247
+    END
+
+    IDD_DIALOG2, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 553
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 250
+    END
+
+    IDD_DIALOG3, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 553
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 246
+    END
+
+    IDD_DIALOG4, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 553
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 250
+    END
+
+    IDD_DIALOG5, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 554
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 250
+    END
+
+    IDD_DIALOG6, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 304
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 247
+    END
+
+    IDD_DIALOG7, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 552
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 250
+    END
+
+    IDD_DIALOG8, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 193
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 92
+    END
+
+    IDD_DIALOG9, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 86
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU1 MENU 
+BEGIN
+    POPUP "托盘"
+    BEGIN
+        MENUITEM "隐藏",                          ID_MENU_HIDE
+        MENUITEM "显示",                          ID_MENU_SHOW
+        MENUITEM "退出",                          ID_MENU_EXIT
+    END
+END
+
+IDR_MENU2 MENU 
+BEGIN
+    POPUP "menu"
+    BEGIN
+        MENUITEM "刷新",                          ID_M_REFRESH_LIST
+        MENUITEM "结束此进程",                       ID_M_EDN_TASK
+        MENUITEM SEPARATOR
+        MENUITEM "定位文件",                        ID_M_FIND_EXE
+        MENUITEM "拷贝路径",                        ID_M_COPY_PATH
+    END
+END
+
+IDR_MENU3 MENU 
+BEGIN
+    POPUP "rightmenu"
+    BEGIN
+        MENUITEM "查杀",                          ID_RIGHTMENU_32799
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP1             BITMAP                  "res\\toolbar.bmp"
+IDR_TOOLBAR1            BITMAP                  "res\\toolbar1.bmp"
+IDB_BITMAP2             BITMAP                  "res\\hacker.bmp"
+IDB_BITMAP3             BITMAP                  "res\\reg.bmp"
+IDB_BITMAP4             BITMAP                  "res\\cmd.bmp"
+IDB_BITMAP5             BITMAP                  "res\\task.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_TOOLBAR1 TOOLBAR  65, 90
+BEGIN
+    BUTTON      ID_TOOL1
+    BUTTON      ID_TOOL2
+    BUTTON      ID_TOOL3
+    BUTTON      ID_TOOL4
+    BUTTON      ID_TOOL5
+    BUTTON      ID_TOOL6
+    BUTTON      ID_TOOL7
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 USB端口安全(&A)..."
+END
+
+STRINGTABLE 
+BEGIN
+    ID_TOOL1                "首页"
+    ID_TOOL2                "搜索设备"
+    ID_TOOL4                "使用记录"
+    ID_TOOL3                "病毒查杀"
+    ID_TOOL5                "加锁加密"
+    ID_TOOL6                "其他功能"
+    ID_TOOL7                "综合设置"
+END
+
+#endif    // 中文(中华人民共和国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#pragma code_page(936)
+#include "res\USB.rc2"  // 非 Microsoft Visual C++ 编辑的资源
+#include "afxres.rc"     // 标准组件
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
